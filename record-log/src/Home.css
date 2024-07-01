@@ -1,0 +1,103 @@
+/* Styling sheet for Home page component defined in Home.js */
+
+.homepage {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.entry-list {
+  flex-grow: 1;
+  padding: 10px;
+  overflow: visible; 
+  display: flex;
+  flex-direction: column;
+}
+
+.entry-list ul {
+  display:flex;
+  flex-direction:column;
+}
+
+.entry-container {
+  border: 1px solid black;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.entry-list .entry-container {
+  box-shadow: 7px 7px rgba(15, 28, 60);
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-style: italic;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/*Animation stuff*/
+.entry-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.entry-container.expanded .entry-content {
+  max-height: 500px; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.create-entry {
+  width: 35%;
+  padding: 2rem;
+  border-radius: 5px;
+  height: fit-content; /* Ensure the height adjusts to content, but doesn't grow with the page */
+  box-sizing: border-box; /* Ensure padding and border are included in the width and height */
+  flex-shrink: 0; /* Prevent the create-entry div from shrinking */
+  position: absolute; /* Keep the create-entry div fixed in its position */
+  right: 10rem;
+  top: 10rem;
+}
+
+.edit-button {
+  margin-right: 10px;
+}
+
+/* Media query to drop down the create-entry div on smaller screens */
+@media (max-width: 880px) {
+  .create-entry {
+    position: fixed; 
+    top: 160px;
+    left: 430px;
+  }
+
+
+}
+
+.edit-button {
+  margin-right: 10px;
+}
+
+.review-preview {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 130px; 
+  color: grey;
+}

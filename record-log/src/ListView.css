@@ -1,0 +1,77 @@
+/* Styling sheet for the List component defined in ListView.js */
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.ListView {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  margin-right: 20px;
+}
+
+.ListView button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0F1C43;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.ListView button.update-button {
+  background-color: #28a745;
+}
+
+.ListView button:hover {
+  background-color: #19347f;
+}
+
+.ListView button.update-button:hover {
+  background-color: #218838;
+}
+
+.entries-box {
+  flex-grow: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  width: 200px; /* Adjusted width to make it wider */
+}
+
+.entries-list {
+  margin-top: 20px;
+}
+
+.list-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer; /* Make the entries appear clickable */
+  transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.list-item:hover {
+  background-color: #f0f0f0; /* Change background color on hover for visual feedback */
+}
+
+.list-item h4 {
+  margin: 0 0 10px;
+}
+
+.list-item p {
+  margin: 0;
+}

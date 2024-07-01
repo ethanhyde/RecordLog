@@ -1,0 +1,34 @@
+Installation Instructions:
+This document details how to install the dependencies for the Record-Log software.
+
+Installation Steps:
+1. Clone the Repository
+2. Install Node.js
+3. Install Node Modules needed for system.
+4. Run system.
+
+Clone the Repository:
+git clone https://github.com/ethanhyde/CS422_Project2.git
+
+How to install Node Package Manager:
+# NOTE:
+# Homebrew is not a Node.js package manager. Please ensure it is already installed
+# on your system. Follow official instructions at https://brew.sh/
+# Homebrew only supports installing major Node.js versions and might not support
+# the latest Node.js version from the 20 release line.
+
+# download and install Node.js with Homebrew
+    brew install node
+
+# verifies the right Node.js version is in the environment  
+    node -v # should print `v22.2.0`
+
+# verifies the right NPM version is in the environment
+    npm -v # should print `10.7.0`
+
+# Navigate to CS422_Project2/record-log and use Node Package Manager to install modules:
+    cd record-log
+    npm i
+
+# To start the Record-Log software, navigate to CS422_Project2/record-log and run:
+    npm start

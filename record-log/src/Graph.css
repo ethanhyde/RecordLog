@@ -1,0 +1,5 @@
+/* Styling sheet for the Graph View component defined in Graph.js */
+
+.graph-title{
+    padding-left: 1rem;
+}

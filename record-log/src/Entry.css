@@ -1,0 +1,109 @@
+/* Style sheet Entry component defined in Entry.jsx*/
+
+.entry-container {
+  border: 3px solid;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+  box-shadow: 7px 7px rgba(15, 28, 67);
+  font-family: 'Raleway', sans-serif;
+}
+
+.entry-field {
+  margin-bottom: 15px;
+}
+
+.entry-field label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.entry-field input, .entry-field textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  resize: vertical;
+  font-family: 'Raleway', sans-serif;
+}
+
+.star-rating {
+  display: flex;
+  gap: 5px;
+}
+
+.star {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.star.selected {
+  color: gold;
+}
+
+.star:hover ~ .star {
+  color: lightgray;
+}
+
+.create-entry-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0F1C43;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-entry-button:hover {
+  background-color: #19347f;
+}
+
+.related-popup {
+  position: absolute;
+  top: 25rem;
+  left: 20rem;
+  width: 200px;
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.related-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.related-item:hover {
+  background-color: #f0f0f0;
+}
+
+.selected-entries {
+  display: flex;
+  flex-direction: column;
+}
+
+.related-box {
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.relate-text {
+  padding: 5rem;
+}
+
+.remove-related {
+  color: red;
+  cursor: pointer;
+}

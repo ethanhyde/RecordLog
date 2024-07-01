@@ -1,0 +1,40 @@
+/* Styling sheet for the Navigation Bar component defined in Navbar.js */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: rgb(195, 218, 245);
+  }
+  
+  .navbar-content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start of the container */
+    }
+  
+  .navbar-buttons {
+    display: flex;
+    gap: 10px;
+    margin-right: auto;
+  }
+  
+  .navbar-button {
+    padding: 10px 20px;
+    background-color: #5e5d61;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .navbar-button:hover {
+    background-color: #3a3939;
+  }
+  
+  .logo-image {
+    height: 70px; 
+    width: auto;  
+  }

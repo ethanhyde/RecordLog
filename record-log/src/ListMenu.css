@@ -1,0 +1,125 @@
+/* Styling sheet for the List Window component defined in the ListMenu.js file */
+
+.stylized-box {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    margin-left: 20px;
+  }
+  
+  .box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .box-header h3 {
+    margin: 0;
+    color: black;
+  }
+  
+  .close-btn {
+    margin-top: 10px;
+    background-color: #0F1C43;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+
+  .close-btn:hover {
+    background-color: #19347f;
+  }
+
+  .edit-list {
+    background-color: #0F1C43;
+    margin-top: auto;
+  }
+
+  .edit-list:hover {
+    background-color: #19347f;
+  }
+  
+  .box-content {
+    margin-top: 10px;
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  
+  .box-content ul {
+    padding-left: 0;
+    font-style: italic;
+    font-weight: 500;
+  }
+  
+  .box-content ul li {
+    list-style-type: none;
+  }
+
+  .entry-item {
+    margin-bottom: 10px;
+  }
+
+  .entry-details-box {
+    width: 50%; /* Adjust width to take up half the available space */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+  }
+
+  .entry-details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    font-style: italic;
+  }
+  
+  .entry-details-content {
+    font-size: 14px;
+  }
+  
+  .entry-box {
+    position: relative;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  .delete-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #0F1C43;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .delete-btn:hover {
+    background-color: #19347f;
+  }
+
+  .entry-list {
+    max-height: 100%; 
+    overflow-y: scroll; 
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
